@@ -1,0 +1,14 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Archive
+  order: 3
+---
+<h1>Archive</h1>
+
+by <a href="/tags/">tags</a>
+
+<h1>Full archive:</h1>
+
+{% set postslist = collections.posts %}
+{% include "postslist.njk" %}

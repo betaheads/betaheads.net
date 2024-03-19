@@ -1,0 +1,83 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Main
+  order: 1
+numberOfLatestPostsToShow: 3
+---
+<style>
+	.fire-image{
+		width: 6rem;
+		height: 6rem;
+		vertical-align: bottom;
+	}
+</style>
+
+<h1><img src="/img/Fire.gif" class="fire-image" alt="fire" loading="lazy"> Betaheads</h1>
+
+<p>
+	Minecraft server running on 1.7.3 beta
+</p>
+
+<h3>About server</h3>
+<p>
+	Server designed for classic Minecraft gameplay. <br>
+	So here's what we've been doing to achieve this:
+</p>
+
+<h3>Plugins</h3>
+<p>
+	There is minimum number of plugins - no claims, no teleports.
+	Plugins that we use are needed to make easier communication between players
+	and protect players from griefing. Also we have plugins
+	that helps maintain server stability and reduce lags.
+	Our first rule regarding plugins - keep classic gameplay.
+	So here will never plugins that change vanilla Minecraft gameplay.
+</p>
+
+<h3>Whitelist</h3>
+<p>
+	Whitelisting is enabled on the server.
+	To connect the server you need to fill out the form
+	and go through verification process.
+	This is necessary to avoid cheating and griefing.
+
+	After filling out, within some time your application will be processed
+	and you will be added to the server’s white list.
+	<br>Our form: <a href="https://forms.gle/UzLmvb49xCwuWkXh7">link to form</a>.
+</p>
+
+<h3>Rules</h3>
+<p>
+	There is a small number of simple rules.
+	You can check it there: <b><a href="/blog/info/rules">rules page.</a></b><br>
+	Please read before joining the server.
+</p>
+
+<h3>Wiki</h3>
+<p>
+	Also we have  <a href="https://betaheads.miraheze.org/wiki/Main_Page">wiki.</a>
+	Check it out and feel free to contribute!
+</p>
+
+{% set postsCount = collections.posts | length %}
+{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
+<h1>Latests news:</h1>
+
+{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
+{% set postslistCounter = postsCount %}
+{% include "postslist.njk" %}
+
+{% set morePosts = postsCount - numberOfLatestPostsToShow %}
+{% if morePosts > 0 %}
+	<p>{{ morePosts }} more in <a href="/blog/">archive</a>.</p>
+{% endif %}
+
+{# List every content page in the project #}
+{#
+<ul>
+	{%- for entry in collections.all %}
+	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
+	{%- endfor %}
+</ul>
+#}
