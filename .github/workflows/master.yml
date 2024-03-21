@@ -1,0 +1,36 @@
+name: Build And deploy
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies & build
+      run: |
+        npm i
+        npm run build
+
+    - name: Deploy
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ env.FTP_HOST }}
+        username: ${{ env.FTP_USER }}
+        password: ${{ secrets.FTP_PASS }}
+        local-dir: ./_site
+        server-dir: ./
+        dangerous-clean-slate: true
