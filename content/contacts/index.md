@@ -9,6 +9,9 @@ eleventyNavigation:
 Server connect info:
 - Server IP: ***mc.betaheads.net***
 
+Server map:
+- [Map](/map/)
+
 Links to all our communication channels:
 
 - [Google form](https://forms.gle/UzLmvb49xCwuWkXh7)
