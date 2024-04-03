@@ -11,13 +11,8 @@
     <link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/png"/>
+
+    <meta http-equiv="Refresh" content="0; url='{{ metadata.dynmapUrl }}'" />
   </head>
-  <style>
-    body {
-      margin: 0 auto;
-    }
-  </style>
-  <body>
-    {{ content | safe }}
-  </body>
+  <body></body>
 </html>

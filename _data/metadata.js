@@ -9,6 +9,6 @@ module.exports = {
 		email: "",
 		discord: "https://discordapp.com/users/360492946455265281",
 	},
-	dynmapUrl: "http://65.21.70.51:25575/",
+	dynmapUrl: "http://mc.betaheads.net:25575/",
 	year: "2024",
 };
