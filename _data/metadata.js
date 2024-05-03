@@ -3,6 +3,7 @@ module.exports = {
 	url: "https://betaheads.net",
 	language: "en",
 	description: "Betaheads minecraft server on version beta 1.7.3",
+	keywords: "minecraft, beta, 1.7.3, server, old, nostalgia, сервер, майнкрафт, бета",
 	author: {
 		name: "Betaheads",
 		url: "",
