@@ -1,6 +1,6 @@
 ---
-title: How to connect the server
-description: Better way to connect betaheads server.
+title: How to connect
+description: Better way to connect betaheads server and others beta 1.7.3 servers with online mode.
 date: 2024-05-19
 tags:
   - Info
