@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 eleventyNavigation:
   key: Contacts
-  order: 2
+  order: 3
 ---
 # Contacts
 
@@ -16,7 +16,7 @@ Links to all our communication channels:
 
 - [Google form](https://forms.gle/UzLmvb49xCwuWkXh7)
 - [Discord](https://discord.com/invite/cFjqQqg7Hv)
-- [Wiki](https://betaheads.miraheze.org/wiki/Main_Page)
+- [Wiki](https://betaheads.net/wiki)
 - [Github](https://github.com/betaheads)
 
 
