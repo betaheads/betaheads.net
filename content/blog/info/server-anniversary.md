@@ -11,6 +11,16 @@ It’s been an amazing journey, and it’s still going!
 
 This past year, the server has grown a lot, both in the game and technically. And all of this is thanks to you!
 
+## Betaheads achievements of this year
+
+This year has been full of fun and exciting things. Here are some of the achievements I was able to collect:
+
+- The world size is 2 GB.
+- The nether size is only about 50 MB.
+- The number of Discord members is 400+.
+- Now we have our own wiki with 22 content pages, 60 files, and 375 edits.
+- Now we have our own stats plugin. Since its launch, the total summed playtime is 161 hours.
+
 ## What’s next?
 
 Main plans for the server this year are:
