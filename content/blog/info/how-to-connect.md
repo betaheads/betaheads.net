@@ -5,6 +5,7 @@ date: 2024-05-19
 tags:
   - Info
   - Tutorial
+  - Troubleshooting
 ---
 
 Firstly - to connect the server you need client that can provide access to your license minecraft account. Because the server has online mode enabled.
