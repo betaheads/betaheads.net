@@ -28,8 +28,8 @@ jobs:
     - name: Deploy
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ${{ vars.FTP_HOST }}
-        username: ${{ vars.FTP_USER }}
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USER }}
         password: ${{ secrets.FTP_PASS }}
         local-dir: ./_site/
         server-dir: ./
