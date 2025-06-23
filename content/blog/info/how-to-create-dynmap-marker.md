@@ -66,7 +66,7 @@ icon:beer
 * bomb
 * bookshelf
 * bricks
-* bronzemedal
+* brzmedal (bronzemedal)
 * bronzestar
 * building
 * cake
@@ -78,7 +78,7 @@ icon:beer
 * coins
 * comment
 * compass
-* construction
+* construct (construction)
 * cross
 * cup
 * cutlery
@@ -88,7 +88,7 @@ icon:beer
 * door
 * down
 * drink
-* exclamation
+* alertico (exclamation)
 * factory
 * fire
 * flower
@@ -106,7 +106,7 @@ icon:beer
 * lighthouse
 * lock
 * minecart
-* offlineuser
+* offlineusr (offlineuser)
 * orangeflag
 * pin
 * pinkflag
@@ -124,7 +124,7 @@ icon:beer
 * scales
 * shield
 * sign
-* silvermedal
+* slvmedal (silvermedal)
 * silverstar
 * skull
 * star
